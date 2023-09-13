@@ -68,7 +68,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header-adress-list {
@@ -432,4 +432,30 @@ img {
 .footer-logo-link {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.trumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.features-icon{
+  border-radius: 4px;
+  background: var(--CLOUD, #f4f4fd);
+  flex-shrink: 0;
+}
+
+.team-icon{
+  fill: var(--cl-icon-fill);
+}
+
+.team-section-list{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
