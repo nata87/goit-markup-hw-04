@@ -46,7 +46,7 @@ img {
   display: block;
 }
 
-.container {
+.footer-container {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
@@ -78,7 +78,7 @@ img {
 
 .footer {
   background-color: var(--navyblue);
-  padding: 100px 0;
+  padding: 100px 0 100px;
 }
 .header-nav {
   display: flex;
@@ -458,4 +458,108 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+
+/*section 5*/
+.customers-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  color: var(--NAVY-BLUE, #2e2f42);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  line-height: 1.11;
+  margin-bottom: 72px;
+}
+.section-customers-list {
+  width: calc((100% - (24px * 5)) / 6);
+  height: 88px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cl-subtle_text);
+  border: 1px solid currentColor;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--cl-pressed_state);
+}
+.customers-icon {
+  fill: currentColor;
+}
+
+.footer-links .social-list {
+  gap: 16px;
+  width: 40px;
+}
+
+.footer-links .footer-socials-link {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.socials-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 40px;
+  height: 40px;
+}
+.social-icon {
+  fill: var(--cl-icon-fill);
+  background-color: var(--cl-primary_brand);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.footer-socials-link {
+  background-color: var(--cl-primary_brand);
+  display: flex;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.footer-links .footer-socials-link:hover,
+.footer-links .footer-socials-link:focus {
+  background-color: var(--cl-success);
+}
+
+
+.footer-info {
+  margin-right: 120px;
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--cl-dark);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--cl-primary_brand);
+  text-decoration: none;
+  margin-bottom: 16px;
+  display: inline-block;
 }
